@@ -54,7 +54,7 @@
     </header>
 
     <!-- Mobile menu toggle -->
-    <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-toggle" id="mobile-toggle">
         <ul class="nav_list">
             <button class="navbar-toggle">
                 <i class="ic--close"></i>
@@ -68,7 +68,7 @@
         <div class="collection_menu_wrap">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 sidebar">
+                    <div class="sidebar">
                         <aside class="sidebar_menu">
                             <ul>
                                 <li><a class="active" href="#" data-category="all">Tất Cả</a></li>
@@ -78,6 +78,14 @@
                                 <li><a href="#" data-category="fruit_tea">Trà Trái Cây</a></li>
                             </ul>
                         </aside>
+
+                        <select id="select" class="sidebar_menu-mobile">
+                            <option value="all" data-category="all">Tất cả</option>
+                            <option value="coffee" data-category="coffee">Cà Phê</option>
+                            <option value="tea" data-category="tea">Trà Sữa</option>
+                            <option value="freeze" data-category="freeze">Thức uống đá xay</option>
+                            <option value="fruit_tea" data-category="fruit_tea">Trà Trái Cây</option>
+                        </select>
                     </div>
                     <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 products">
                         <div class="block_menu_item coffee">
@@ -148,14 +156,5 @@
     
     <script src="../javascript/index.js"></script>
     <script src="../javascript/actions.js"></script>
-    <script>
-        // JavaScript for hamburger menu toggle
-        const hamburger = document.getElementById("hamburger-icon");
-        const mobileMenu = document.getElementById("mobile-menu");
-
-        hamburger.addEventListener("click", () => {
-            mobileMenu.classList.toggle("active");
-        });
-    </script>
 </body>
 </html>
