@@ -212,7 +212,7 @@
 }
 
 @media (min-width: 1200px) {
-    .col-lg-9 {
-      width: 75%;
-    }
+  .col-lg-9 {
+    width: 75%;
   }
+}
