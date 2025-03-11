@@ -1,0 +1,218 @@
+/* Mobile and Tablet View */
+@media (max-width: 768px) {
+
+    /* Media Queries for responsiveness */
+    .header-nav {
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    .header-nav_logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header-nav_logo img {
+        height: 40px;
+    }
+
+    .header-nav .nav {
+        display: none;
+    }
+
+    /* Display hamburger on mobile */
+    .hamburger {
+        display: flex;
+        margin-right: 20px;
+    }
+
+    /* Sidebar for mobile (hidden initially) */
+    .sidebar {
+        display: none;
+    }
+
+    .sidebar_menu {
+        display: block;
+    }
+
+    /* Adjust layout for mobile screen */
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+
+    /* Adjusting container max-width for responsiveness */
+    .container {
+        max-width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /* Top bar for contact */
+    .top-bar_content {
+        font-size: 10px;
+    }
+    .top-bar_content div {
+        padding: 5px 0;
+    }
+
+    /* Header layout for smaller devices */
+    .header-nav_logo {
+        padding: 10px 0;
+    }
+
+    .header-nav_logo img {
+        height: 30px;
+    }
+
+    .header-nav_logo_text {
+        line-height: 40px;
+        font-size: 16px;
+        font-weight: 400;
+        height: 40px;
+        padding-left: 10px;
+    }
+
+    /* Adjusting the nav items */
+    .nav_list {
+        display: block;
+        text-align: left;
+        width: 100%;
+    }
+
+    .nav_item {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+
+    .nav_item a {
+        padding: 15px 20px;
+        display: block;
+        width: 100%;
+    }
+
+    /* Adjust Sidebar and Product Layout */
+    .collection_menu_wrap {
+        margin: 20px 0;
+    }
+
+    .sidebar {
+        width: 100%;
+        float: none;
+        padding-left: 0;
+    }
+
+    @media (max-width: 768px) {
+        .products::before {
+            content: none; /* Removes the content for mobile screens */
+        }
+    }
+
+    /* Stack menu items vertically */
+    .menu_item {
+        -ms-flex: 0 0 calc(50% - 16px);
+        -webkit-flex: 0 0 calc(50% - 16px);
+        flex: 0 0 calc(50% - 16px);
+        margin: 0 8px 16px;
+    }
+
+    /* Adjust title font size */
+    .section_heading {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* Make sidebar menu links bigger and stacked */
+    .sidebar_menu ul li a {
+        font-size: 16px;
+        padding-left: 20px;
+    }
+
+    .sidebar_menu > ul > li > a.active {
+        font-size: 18px;
+    }
+
+    /* Add space between products */
+    .menu_item .menu_item_info {
+        padding: 10px;
+    }
+
+    .price_product_item {
+        font-size: 16px;
+    }
+}
+
+/* Mobile View (up to 480px) */
+@media (max-width: 480px) {
+    /* Adjust container padding */
+    .container {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    /* Adjust font sizes further */
+    .header-nav_logo_text {
+        font-size: 16px;
+    }
+
+    .menu_item {
+        width: calc(50% - 30px);
+    }
+
+    .menu_item .menu_item_info h3 {
+        font-size: 16px;
+        height: 44px;
+        max-height: 44px;
+        -webkit-line-clamp: 2;
+    }
+
+    .price_product_item {
+        font-size: 14px;
+    }
+
+    /* Make header smaller on mobile */
+    .header-nav {
+        padding: 10px;
+    }
+
+    .header-nav_logo img {
+        height: 25px;
+    }
+
+    /* Adjust menu items and logo in header */
+    .nav_list {
+        display: block;
+    }
+
+    .nav_item {
+        padding: 10px 0;
+    }
+
+    /* Stack sidebar and products */
+    .sidebar {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    /* Make product images responsive */
+    .menu_item .menu_item_image > a {
+        padding-top: 100%; /* Make image aspect ratio responsive */
+    }
+}
+
+
+@media (min-width: 992px) {
+    .sidebar + .products {
+      width: 70.5%;
+      padding-left: 72px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-9 {
+      width: 75%;
+    }
+  }

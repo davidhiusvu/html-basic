@@ -123,7 +123,6 @@ header {
     display: flex;
     align-items: center;
     padding: 19px;
-    padding-right: 30px;
 }
 
 .header-nav_logo img {
@@ -136,6 +135,7 @@ header {
     font-size: 20px;
     font-weight: 400;
     height: 60px;
+    padding-left: 10px;
 }
 
 .nav {
@@ -155,6 +155,55 @@ header {
     height: 60px;
     line-height: 60px;
     padding: 19px;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none; /* Hidden by default on desktop */
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 21px;
+}
+
+.hamburger .bar {
+    height: 4px;
+    background-color: #191919;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Mobile menu */
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 1001;
+}
+
+.mobile-menu.active {
+    display: block;
+}
+
+.mobile-menu .nav_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mobile-menu .nav_item a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #191919;
 }
 
 /* banner */
@@ -261,9 +310,7 @@ header {
 
 .products {
     position: relative;
-    width: 70%;
     float: left;
-    padding-left: 5%;
 }
 
 .products::before {
@@ -427,3 +474,10 @@ header {
     padding-bottom: 8px;
     line-height: 22px;
 }
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
