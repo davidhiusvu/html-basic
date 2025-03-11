@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <div class="top-bar container">
-        <div class="top-bar_content">
+    <div class="top-bar">
+        <div class="top-bar_content container">
             <div class="address">
-                <i class="ic---address"></i>
+                <i class="ic--address"></i>
                 <span class="pl-4">Dương Nội, La Khê, Hà Đông</span>
             </div>
             <div class="phone">
@@ -22,39 +22,59 @@
     </div>
     <header>
         <div class="header-nav container">
-            <a href="#" class="header-nav_logo">
+            <a href="./index.html" class="header-nav_logo">
                 <img src="../../images/logo-tet160x160.png" alt="logo" >
                 <span class="header-nav_logo_text">Tiệm trà Cô Nhi</span>
             </a>
     
             <nav id="header_menu_top" class="nav">
                 <ul class="nav_list">
-                    <li class="nav_item"><a href="#">Menu</a></li>
+                    <li class="nav_item"><a href="./menu.html">Menu</a></li>
                     <li class="nav_item"><a href="#">Liên hệ</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <section class="banner">
-            <div class="owl-carousel">
-                <div class="owl-carousel-outer">
-                    <div class="owl-stage">
-                        <div class="owl-item">
-                            <a href="#" class="banner_home">
-                                <div class="aspect-ratio">
-                                    <picture>
-                                        <source media="(max-width: 767px)" srcset="https://file.hstatic.net/1000075078/file/web_moi_-_mobile_c48c6b1dee32416e8dcaaf44527e9601.jpg">
-                                        <source media="(min-width: 768px)" srcset="https://file.hstatic.net/1000075078/file/web_moi_-_desktop_d2b3024e2914401a98601a1c43064e6d.jpg">
-                                        <img alt="ROMRA 40%" class=" ls-is-cached lazyloaded" src="https://file.hstatic.net/1000075078/file/web_moi_-_desktop_d2b3024e2914401a98601a1c43064e6d.jpg">
-                                    </picture>
+        <div class="collection_menu_wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 sidebar">
+                        <aside class="sidebar_menu">
+                            <ul>
+                                <li class=""><a class="active" href="#">Tất Cả</a></li>
+                                <li class=""><a href="#">Cà Phê</a></li>
+                                <li class=""><a href="#">Trà Sữa</a></li>
+                                <li class=""><a href="#">Thức uống đá xay</a></li>
+                                <li class=""><a href="#">Trà Trái Cây</a></li>
+                            </ul>
+                        </aside>
+                    </div>
+    
+                    <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 products">
+                        <div id="1" class="block_menu_item">
+                            <h3 class="block_menu_item_title">
+                                <span class="line_after_heading section_heading">Cà Phê Highlight</span>
+                            </h3>
+                            <div class="flex_wrap display_flex menu_lists menu_list_collection">
+                                <div class="menu_item">
+                                    <div class="menu_item_image">
+                                    <a href="#" title="Trà Xanh Espresso Marble"><img class=" ls-is-cached lazyloaded" src="https://product.hstatic.net/1000075078/product/1737355620_tx-espresso-marble_3942abe277644167a391b0a3bcfc52fc_large.png" alt="tra xanh espresso marble"></a>
+                                    <ul class="labels">
+                                    </ul>
+    
+                                    </div>
+                                    <div class="menu_item_info">
+                                    <h3><a href="#" title="Trà Xanh Espresso Marble">Trà Xanh Espresso Marble</a></h3>
+                                    <div class="price_product_item">49.000 đ</div>
+                                    </div>
                                 </div>
-                            </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
     <script src="../javascript/index.js"></script>
 </body>
