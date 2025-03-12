@@ -11,7 +11,7 @@
     <meta property="og:url" content="https://tiemtraconhi.com" />
     <meta property="og:title" content="Tiệm Trà Cô Nhi" />
     <meta property="og:description" content="Tiệm Trà Cô Nhi" />
-    <meta property="og:image" content="../../images/logo-tet.jpg" />
+    <meta property="og:image" content="https://scontent.fhan20-1.fna.fbcdn.net/v/t39.30808-6/322599936_1353888601824625_4977395941384634961_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=KAJsbV7ed0sQ7kNvgHRbHCD&_nc_oc=AdjQrHYP_d5eiM_zCGNcJjzKDNX8Yga9bjPDCiWV57YD27qopnf1lcVRgnjApCVCgDM&_nc_zt=23&_nc_ht=scontent.fhan20-1.fna&_nc_gid=A-bJQZ_Z0oXjWs9kPtyJZph&oh=00_AYHIQykWSr1MVv2dyzL0n4Au8QczBOF5uXTY2BNZXuY_fQ&oe=67D57A70" />
     <link rel="icon" type="image/x-icon" href="../../images/logo-tet.ico">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/responsive.css">
@@ -20,14 +20,14 @@
 <body>
     <div class="top-bar">
         <div class="top-bar_content container">
-            <div class="address">
+            <a href="#" class="address">
                 <i class="ic--address"></i>
                 <span class="pl-4">Dương Nội, La Khê, Hà Đông</span>
-            </div>
-            <div class="phone">
+            </a>
+            <a href="tel:0869034706" class="phone">
                 <i class="ic--baseline-phone"></i>
                 <span class="pl-4">(+84) 869034706</span>
-            </div>
+            </a>
         </div>
     </div>
     <header>
@@ -47,7 +47,7 @@
             <nav id="header_menu_top" class="nav">
                 <ul class="nav_list">
                     <li class="nav_item"><a href="./menu.html">Menu</a></li>
-                    <li class="nav_item"><a href="#">Liên hệ</a></li>
+                    <!-- <li class="nav_item"><a href="#">Liên hệ</a></li> -->
                 </ul>
             </nav>
         </div>
@@ -60,30 +60,126 @@
                 <i class="ic--close"></i>
             </button>
             <li class="nav_item"><a href="./menu.html">Menu</a></li>
-            <li class="nav_item"><a href="#">Liên hệ</a></li>
+            <!-- <li class="nav_item"><a href="#">Liên hệ</a></li> -->
         </ul>
     </div>
+
     <main>
-        <section class="banner">
-            <div class="owl-carousel">
-                <div class="owl-carousel-outer">
-                    <div class="owl-stage">
-                        <div class="owl-item">
-                            <a href="#" class="banner_home">
-                                <div class="aspect-ratio">
-                                    <picture>
-                                        <source media="(max-width: 767px)" srcset="https://file.hstatic.net/1000075078/file/web_moi_-_mobile_c48c6b1dee32416e8dcaaf44527e9601.jpg">
-                                        <source media="(min-width: 768px)" srcset="https://file.hstatic.net/1000075078/file/web_moi_-_desktop_d2b3024e2914401a98601a1c43064e6d.jpg">
-                                        <img alt="ROMRA 40%" class=" ls-is-cached lazyloaded" src="https://file.hstatic.net/1000075078/file/web_moi_-_desktop_d2b3024e2914401a98601a1c43064e6d.jpg">
-                                    </picture>
+        <div class="collection_menu_wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="sidebar">
+                        <aside class="sidebar_menu">
+                            <ul>
+                                <li><a class="active" href="#" data-category="all">Tất Cả</a></li>
+                                <li><a href="#" data-category="coffee">Cà Phê</a></li>
+                                <li><a href="#" data-category="tea">Trà Sữa</a></li>
+                                <li><a href="#" data-category="freeze">Thức uống đá xay</a></li>
+                                <li><a href="#" data-category="fruit_tea">Trà Trái Cây</a></li>
+                            </ul>
+                        </aside>
+
+                        <select id="select" class="sidebar_menu-mobile">
+                            <option value="all" data-category="all">Tất cả</option>
+                            <option value="coffee" data-category="coffee">Cà Phê</option>
+                            <option value="tea" data-category="tea">Trà Sữa</option>
+                            <option value="freeze" data-category="freeze">Thức uống đá xay</option>
+                            <option value="fruit_tea" data-category="fruit_tea">Trà Trái Cây</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 products">
+                        <div class="block_menu_item coffee">
+                            <h3 class="block_menu_item_title">
+                                <span class="line_after_heading section_heading">Cà Phê Muoi</span>
+                            </h3>
+                            <div class="flex_wrap display_flex menu_lists menu_list_collection">
+                                <div class="menu_item">
+                                    <div class="menu_item_image">
+                                        <a href="#" title="Cà Phê Muoi"><img class=" ls-is-cached lazyloaded" src="../../images/cf-muoi.png" alt="Cà Phê Muoi"></a>
+                                    </div>
+                                    <div class="menu_item_info">
+                                        <h3><a href="#" title="Cà Phê Muoi">Cà Phê Muoi</a></h3>
+                                        <div class="price_product_item">49.000 đ</div>
+                                    </div>
                                 </div>
-                            </a>
+
+                                <div class="menu_item">
+                                    <div class="menu_item_image">
+                                        <a href="#" title="Cà Phê Muoi"><img class=" ls-is-cached lazyloaded" src="../../images/cf-muoi.png" alt="Cà Phê Muoi"></a>
+                                    </div>
+                                    <div class="menu_item_info">
+                                        <h3><a href="#" title="Cà Phê Muoi">Cà Phê Muoi</a></h3>
+                                        <div class="price_product_item">49.000 đ</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="block_menu_item tea">
+                            <h3 class="block_menu_item_title">
+                                <span class="line_after_heading section_heading">Trà Sữa</span>
+                            </h3>
+                            <div class="flex_wrap display_flex menu_lists menu_list_collection">
+                                <div class="menu_item">
+                                    <div class="menu_item_image">
+                                        <a href="#" title="Trà Sữa"><img class=" ls-is-cached lazyloaded" src="../../images/cf-muoi.png" alt="Trà Sữa"></a>
+                                    </div>
+                                    <div class="menu_item_info">
+                                        <h3><a href="#" title="Trà Sữa">Trà Sữa</a></h3>
+                                        <div class="price_product_item">40.000 đ</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="block_menu_item freeze">
+                            <h3 class="block_menu_item_title">
+                                <span class="line_after_heading section_heading">Freeze</span>
+                            </h3>
+                            <div class="flex_wrap display_flex menu_lists menu_list_collection">
+                                <div class="menu_item">
+                                    <div class="menu_item_image">
+                                        <a href="#" title="Freeze"><img class=" ls-is-cached lazyloaded" src="../../images/freeze-tra-xanh.webp" alt="Freeze"></a>
+                                    </div>
+                                    <div class="menu_item_info">
+                                        <h3><a href="#" title="Freeze">Freeze</a></h3>
+                                        <div class="price_product_item">40.000 đ</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+        <div style="clear:both"></div>
     </main>
+
+    <footer id="footer">
+        <section class="footer">
+            <div class="footer-row">
+              <div class="footer-col">
+                <h4>Info</h4>
+                <ul class="links">
+                  <li><a href="#">....</a></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4>Explore</h4>
+                <ul class="links">
+                  <li><a href="#">....</a></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4>Legal</h4>
+                <ul class="links">
+                  <li><a href="#">....</a></li>
+                </ul>
+              </div>
+            </div>
+        </section>
+    </footer>
+    
     <script src="../javascript/index.js"></script>
     <script src="../javascript/actions.js"></script>
 </body>
